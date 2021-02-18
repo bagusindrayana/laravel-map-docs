@@ -16,7 +16,7 @@ $laravelMap = new LaravelMap('mapbox',[
 
 ## addEvent
 
-- you can add some event like load,click,etch and `$m` will return mapbox object
+you can add some event like load,click,etch and `$m` will return mapbox object
 
 ```php
 $laravelMap->map->addEvent('load',function($m){
@@ -204,3 +204,4 @@ $laravelMap->map->locationPicker([
     'inputId'=>'input-coordinate', // id for input tag
     'inputClass'=>'form-control',//class for input tag
 ]);
+```
