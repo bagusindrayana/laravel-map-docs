@@ -25,3 +25,53 @@ $laravelMap->map->addEvent('load',function($m){
 });
 ```
 
+## Marker
+
+- add simple marker
+
+```php
+use Bagusindrayana\LaravelMap\Leaflet\Marker;
+
+$marker = new Marker([
+    'latLng'=>[55.666067,12.551453]
+]);
+$map->giveTo($marker);
+```
+
+## Circle
+
+- add simple circle
+
+```php
+use Bagusindrayana\LaravelMap\Leaflet\Circle;
+
+$circle = new Circle([
+    'latLng'=>[55.666067,12.551453],
+    'color'=>'red',
+    'fillColor'=>'#f03',
+    'fillOpacity'=>0.5,
+    'radius'=>500
+]);
+$map->giveTo($circle);
+```
+
+## Polygon
+
+- add simple polygon
+
+```php
+use Bagusindrayana\LaravelMap\Leaflet\Polygon;
+
+$polygon = new Polygon([
+    'latLng'=>[
+        [55.665957,12.550343],
+        [55.666067,12.551453],
+        [55.667177,12.552563]
+    ],
+    'color'=>'blue',
+    'fillColor'=>'green',
+    'fillOpacity'=>0.5,
+]);
+$map->giveTo($polygon);
+```
+
