@@ -7,13 +7,13 @@
 Use the package manager [composer](https://getcomposer.org) to install LARAVEL-MAP.
 
 ```bash
-composer require bagusindrayana/laravel-map
+composer require Bagusindrayana/laravel-map
 ```
 
 Publish provider
 
 ```bash
-php artisan vendor:publish --provider "BagusIndrayana\LaravelMap\LaravelMapServiceProvider"
+php artisan vendor:publish --provider "Bagusindrayana\LaravelMap\LaravelMapServiceProvider"
 ```
 
 If laravel < 5.5 add service provider and alias in config/app.php
@@ -22,14 +22,14 @@ If laravel < 5.5 add service provider and alias in config/app.php
     'providers'=>[
         //....
 
-        BagusIndrayana\LaravelMap\LaravelMapServiceProvider::class,
+        Bagusindrayana\LaravelMap\LaravelMapServiceProvider::class,
 
         //...
     ],
     'aliases'=>[
         //...
 
-        'LaravelMap'=>BagusIndrayana\LaravelMap\LaravelMap::class
+        'LaravelMap'=>Bagusindrayana\LaravelMap\LaravelMap::class
 
         //...
     ]
