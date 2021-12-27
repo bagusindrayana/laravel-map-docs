@@ -179,7 +179,7 @@ $laravelMap->map->hasImage('image-id',function($m){
 update image based on id https://docs.mapbox.com/mapbox-gl-js/api/map/#map#updateimage
 ```php
 $laravelMap->map->loadImage("https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png",function($m){
-    $m->haseImage('some-image',function($m){
+    $m->hasImage('some-image',function($m){
         $m->updateImage('some-image','image');
     });
 },'some-image');
